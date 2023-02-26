@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Day 12 - Calculator</title>
+		<link rel="stylesheet" href="./styles/style.css" />
+		<link rel="stylesheet" href="./styles/reset.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="calc">
+				<input
+					type="text"
+					class="calc__display"
+					id="display"
+					readonly
+				/>
+
+				<button onclick="input('+')" class="calc__operations">+</button>
+				<button onclick="input('-')" class="calc__operations">-</button>
+				<button onclick="input('x')" class="calc__operations">x</button>
+				<button onclick="input('÷')" class="calc__operations">÷</button>
+				<button onclick="input('7')">7</button>
+				<button onclick="input('8')">8</button>
+				<button onclick="input('9')">9</button>
+				<button onclick="reset()">AC</button>
+				<button onclick="input('4')">4</button>
+				<button onclick="input('5')">5</button>
+				<button onclick="input('6')">6</button>
+				<button onclick="backspace()">&LeftArrow;</button>
+				<button onclick="input('1')">1</button>
+				<button onclick="input('2')">2</button>
+				<button onclick="input('3')">3</button>
+				<button onclick="input('0')" class="calc__zero">0</button>
+				<button onclick="input('.')">.</button>
+				<button onclick="calc()" class="calc__result">=</button>
+			</div>
+			<div class="contacts">
+				<p class="contacts__name">Desenvolvido por: Kayky de Sousa</p>
+				<p class="contacts__social">
+					<a
+						href="https://www.linkedin.com/in/kayky-de-sousa/"
+						className="hover:underline"
+					>
+						Linkedin
+					</a>
+					|
+					<a
+						href="https://github.com/KaykySousa"
+						className="hover:underline"
+					>
+						Github
+					</a>
+				</p>
+			</div>
+		</div>
+
+		<script src="script.js" defer></script>
+	</body>
+</html>
